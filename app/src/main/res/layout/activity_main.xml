@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <!-- 1. Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Migros Logo"
+                android:src="@drawable/migros_logo" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- 2. Yatay Kaydırılabilir Kartlar -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="4dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_card_1"
+                    android:contentDescription="Kart 1" />
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_card_2"
+                    android:contentDescription="Kart 2" />
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_card_3"
+                    android:contentDescription="Kart 3" />
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_card_4"
+                    android:contentDescription="Kart 4" />
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_card_5"
+                    android:contentDescription="Kart 5" />
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_card_6"
+                    android:contentDescription="Kart 6" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- 3. Arama Çubuğu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="#EEEEEE"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                android:contentDescription="Arama" />
+
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ürün, yemek veya hizmet ara"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:inputType="text" />
+
+            <ImageButton
+                android:id="@+id/micButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_michrophone"
+                android:background="@android:color/transparent"
+                android:contentDescription="Mikrofon" />
+        </LinearLayout>
+
+        <!-- 4. Butonlar -->
+
+        <!-- Satır 1: 2 Buton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="4dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_1"
+                android:background="@null"
+                android:contentDescription="Buton 1" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_2"
+                android:background="@null"
+                android:contentDescription="Buton 2" />
+        </LinearLayout>
+
+        <!-- Satır 2: 2 Buton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="4dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_3"
+                android:background="@null"
+                android:contentDescription="Buton 3" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_4"
+                android:background="@null"
+                android:contentDescription="Buton 4" />
+        </LinearLayout>
+
+        <!-- Satır 3: 3 Buton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="4dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_5"
+                android:background="@null"
+                android:contentDescription="Buton 5" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_6"
+                android:background="@null"
+                android:contentDescription="Buton 6" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_7"
+                android:background="@null"
+                android:contentDescription="Buton 7" />
+        </LinearLayout>
+
+        <!-- Satır 4: 3 Buton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:paddingHorizontal="4dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_8"
+                android:background="@null"
+                android:contentDescription="Buton 8" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_9"
+                android:background="@null"
+                android:contentDescription="Buton 9" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_button_10"
+                android:background="@null"
+                android:contentDescription="Buton 10" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
